@@ -90,7 +90,7 @@
 }
 
 .input-search {
-  @apply w-40 bg-transparent outline-none text-body-medium text-white;
+  @apply w-40 bg-transparent outline-none text-body-medium text-pink-1;
 }
 
 /* Hero */
@@ -99,7 +99,7 @@
 }
 
 .hero-bg-image {
-  @apply object-cover h-full w-full;
+  @apply object-cover;
 }
 
 .overlay {
@@ -146,11 +146,11 @@
 
 /* Movie */
 .movie-card {
-  @apply relative h-24 min-w-48 sm:h-32 sm:min-w-60 md:h-36 md:min-w-72 cursor-pointer hover:outline-white;
+  @apply relative h-24 min-w-48 sm:h-32 sm:min-w-60 md:h-36 md:min-w-72 cursor-pointer ;
 }
 
 .thumbnail {
-  @apply object-cover w-full h-full rounded-lg;
+  @apply object-cover rounded-lg border-2 border-transparent hover:border-pink-1;
 }
 
 .border {

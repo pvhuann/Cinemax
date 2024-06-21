@@ -1,6 +1,5 @@
 
 import { fetchTrending } from "@/actions/movieData";
-import React from "react";
 import HeroCard from "./HeroCard";
 
 const Hero = async () => {
