@@ -12,7 +12,7 @@ const UserSchema = new mongoose.Schema({
         unique: true,
         lowercase: true,
         validate:{
-            validator: (value) => /\S+@\S+\.\S+/.test(value), // Xác thực email hợp lệ
+            validator: (value:any) => /\S+@\S+\.\S+/.test(value), // Xác thực email hợp lệ
             message:"Invalid email format"
         },
     },
@@ -26,6 +26,6 @@ const UserSchema = new mongoose.Schema({
     }
 }) 
 
-const User= mongoose.models.User || mongoose.models("User", UserSchema)
+const User= mongoose.models.User || mongoose.model("User", UserSchema)
 
 export default User

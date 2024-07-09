@@ -10,7 +10,12 @@ export const connectToDB= async(): Promise<void>=>{
     }
 
     try {
-        // await mongoose.connect()
+        await mongoose.connect(process.env.MONGODB_URL|| "",{
+            dbName: 'Cinema',
+        })
+
+        isConnected = true;
+        console.log("Mongoose is connected successfully")
     } catch (error) {
         console.log("error: ", error)           
     }
